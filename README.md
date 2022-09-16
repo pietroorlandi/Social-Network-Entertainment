@@ -2,6 +2,10 @@
 Questa applicazione Android vuole rappresentare un social network basato su titoli di intrattenimento.</br>
 Si appoggia alle funzionalità di Firestore Database e a Firebase Auth per l'autenticazione degli utenti.
 
+##### Lingue disponibili
+- Inglese
+- Italiano
+
 ### Autenticazione
 L'utente può accedere alla piattaforma tramite email e password oppure tramite l'accesso con account Google. Nel caso si scelga come metodo d'accesso l'email, bisognerà verificarla, cliccando sul token che verrà inviato (controllare nella sezione spam).
 <p align="center">
@@ -34,6 +38,20 @@ Ogni utente può inviare delle raccomandazioni a ciascun altro utente. In questa
 <p align="center">
 <img src="https://github.com/pietroorlandi/Social-Network-Entertainment/blob/master/img/screen_reccomendation.jpeg" width="180">
 </p>
+
+#### Mio profilo
+In questa sezione l'utente loggato può vedere e modificare tutte le informazioni relative al proprio profilo.
+<p align="center">
+<img src="https://github.com/pietroorlandi/Social-Network-Entertainment/blob/master/img/screen_my_profile.jpeg" width="180">
+</p>
+
+### Altre funzionalità
+- l'utente aggiungerà i titoli di intrattenimento alla propria lista di intrattenimenti consumati;
+- l'utente potrà seguire altri profili;
+- l'utente potrà visualizzare il profilo di altri utenti, visualizzando tutti i contenuti consumati da quest'ultimo;
+- l'utente potrà visualizzare tutte le informazioni riguardo un determinato titolo di intrattenimento;
+- l'utente potrà recensire un determinato titolo di intrattenimento, inserendo un voto obbligatorio (da 0 a 5) e un parere testuale facoltativo;
+- l'utente potrà vedere la lista dei follower e la lista dei profili seguiti di ciascun altro utente;
 
 
 
