@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">SocialNetwork_Entertainment</string>
+
+    <!-- Generic error -->
+    <string name="empty_string_error">Errore! Hai inserito una stringa nulla</string>
+    <string name="error_internet_connection">Nessuna connessione ad internet</string>
+
+
+    <!--Login and SignUp  -->
+    <string name="email">Email</string>
+    <string name="signup">Registrati</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Conferma password</string>
+    <string name="go_to_login">Vai al login</string>
+    <string name="login">Login</string>
+    <string name="sign_in_google">Entra con Google</string>
+    <string name="short_password">Password troppo corta! (min 8 caratteri)</string>
+    <string name="wrong_password">Password errata!</string>
+    <string name="password_confirm_error">Le due password inserite non coincidono! </string>
+    <string name="empty_field_error">Non hai completato tutti i campi</string>
+    <string name="invalid_email">Email non valida!</string>
+    <string name="used_email">Email già presente!</string>
+    <string name="error_authentication">Errore durante l\'autenticazione, riprova fra poco</string>
+    <string name="error_registration">Errore durante la registrazione!</string>
+    <string name="verify_email_message">Verifica la tua mail per accedere! </string>
+    <string name="username_duplicate">Username già occupato</string>
+    <string name="login_error_message">Password o email sbagliate </string>
+    <string name="empty_value_message">Non hai inserito la password o l\'email</string>
+
+    <!-- Navigation bar string  -->
+    <string name="search_users">Utenti</string>
+    <string name="home">Home</string>
+    <string name="profile">Profilo</string>
+    <string name="explore">Esplora</string>
+    <string name="recommendation">Raccomandazioni</string>
+
+    <!-- Button strings  -->
+    <string name="write_review_button">Recensione</string>
+
+    <!-- Entertaiment view  -->
+    <string name="title_entertaiment">Titolo: </string>
+    <string name="type_entertaiment">Tipo: </string>
+    <string name="category_entertaiment">Categoria: </string>
+    <string name="release_year_entertainment">Anno di uscita: </string>
+    <string name="platform_entertainment">Piattaforme: </string>
+    <string name="duration_entertainment">Durata: </string>
+    <string name="submit_review">Invia recensione</string>
+    <string name="recommend_entertainment">Consiglia</string>
+    <string name="message_error_empty_entertainment">Nome intrattenimento non trovato </string>
+    <string name="entertainment_deleted_from_list">Titolo rimosso dalla tua lista</string>
+
+
+    <!-- Review view  -->
+    <string name="message_review_hint">Scrivi la tua recensione qui </string>
+    <string name="title_review">Scrivi recensione</string>
+    <string name="review_already_done">Recensione per questo contenuto già fatta!</string>
+    <string name="txt_mean_reviews">Media recensioni: </string>
+    <string name="review_done">Recensione fatta correttamente </string>
+    <string name="add_list_consumed">Lista </string>
+
+    <!-- Filter dialog view -->
+    <string name="filter_empty_entertainment_error">Seleziona almeno un tipo di intrattenimento!</string>
+
+    <!-- Recommend dialog view -->
+    <string name="recommend_dialog_title">Raccomanda intrattenimento</string>
+    <string name="recommend_search_user">Cerca un utente</string>
+    <string name="recommendation_done">Raccomandazione inviata</string>
+
+    <!-- List recommendation view -->
+    <string name="list_recommendation">Lista raccomandazioni</string>
+    <string name="from_recommendation">Da</string>
+
+    <!-- Update profile -->
+    <string name="update_profile_message">Profilo utente aggiornato correttamente!</string>
+    <string name="my_profile">Il mio profilo</string>
+    <string name="view_my_profile">Vedi il mio profilo</string>
+    <string name="edit_bio_my_profile">Modifica bio</string>
+    <string name="edit_username_my_profile">Modifica username</string>
+    <string name="edit_platform_my_profile">Piattaforme che possiedi</string>
+    <string name="done">Fatto</string>
+
+    <!-- List user dialog -->
+    <string name="list_follower">Follower di&#160;</string>
+    <string name="list_following">Seguiti da&#160;</string>
+
+    <!-- Filter entertainment dialog -->
+    <string name="filter">Filtra</string>
+    <string name="filter_tv_show">Serie TV</string>
+    <string name="filter_book">Libri</string>
+    <string name="filter_category_action">Azione</string>
+    <string name="filter_category_adventure">Avventura</string>
+    <string name="filter_category_family">Familia</string>
+    <string name="filter_category_comedy">Commedia</string>
+    <string name="filter_category_documentaries">Documentari</string>
+
+    <!-- Profile view -->
+    <string name="list_entertainemnt_consumed">Lista titoli consumati</string>
+
+    <!-- Add list consumed -->
+    <string name="added_to_list_consumed">Titolo aggiunto alla lista dei tuoi consumati</string>
+    <string name="duplicate_entertainment_in_list_consumed">Intrattenimento già presente nella tua lista</string>
+
+    <!-- Information Entertainment view -->
+    <string name="information_entertainment_title">Informazioni sul titolo</string>
+
+    <!-- Exlore entertainment fragment view -->
+    <string name="search_entertainment">Cerca titolo</string>
+
+</resources>

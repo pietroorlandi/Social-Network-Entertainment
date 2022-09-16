@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">SocialNetwork_Entertainment</string>
+
+    <!-- Generic error -->
+    <string name="empty_string_error">Error! The string that you have entered is empty</string>
+    <string name="error_internet_connection">Error! No internet connection</string>
+
+
+    <!--Login and SignUp  -->
+    <string name="email">Email</string>
+    <string name="signup">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="go_to_login">Go to login</string>
+    <string name="login">Login</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="short_password">Password is too Short! (min 8 chars)</string>
+    <string name="wrong_password">Wrong password!</string>
+    <string name="password_confirm_error">The two password entered are not the same! </string>
+    <string name="empty_field_error">You have not completed all fields</string>
+    <string name="invalid_email">Invalid email!</string>
+    <string name="used_email">Already used email!</string>
+    <string name="error_authentication">Error during authentication! Retry later…</string>
+    <string name="error_registration">Error during registration!</string>
+    <string name="verify_email_message">Please verify your e-mail to login!</string>
+    <string name="username_duplicate">Username already taken</string>
+    <string name="login_error_message">Wrong email or password!</string>
+    <string name="empty_value_message">You have not entered your password or email</string>
+
+    <!-- Navigation bar string  -->
+    <string name="search_users">Users</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="explore">Explore</string>
+    <string name="recommendation">Recommendation</string>
+
+    <!-- Button strings  -->
+    <string name="write_review_button">Review</string>
+
+    <!-- Entertaiment view  -->
+    <string name="title_entertaiment">Title: </string>
+    <string name="type_entertaiment">Type: </string>
+    <string name="category_entertaiment">Category: </string>
+    <string name="release_year_entertainment">Release year: </string>
+    <string name="platform_entertainment">Platforms: </string>
+    <string name="duration_entertainment">Duration: </string>
+    <string name="submit_review">Submit review</string>
+    <string name="recommend_entertainment">Recommend</string>
+    <string name="message_error_empty_entertainment">No match in database based on entertainment name</string>
+    <string name="entertainment_deleted_from_list">Entertainment removed from your list</string>
+
+    <!-- Review view  -->
+    <string name="message_review_hint">Write your review here</string>
+    <string name="title_review">Write review</string>
+    <string name="review_already_done">Review for this content already done!</string>
+    <string name="txt_mean_reviews">Average reviews: </string>
+    <string name="add_list_consumed">List </string>
+    <string name="review_done">Review done successfully </string>
+
+    <!-- Filter dialog view -->
+    <string name="filter_empty_entertainment_error">Select at least one type of entertainment!</string>
+
+    <!-- Recommend dialog view -->
+    <string name="recommend_dialog_title">Recommend entertainment</string>
+    <string name="recommend_search_user">Search a user</string>
+    <string name="recommendation_done">Recommendation done </string>
+
+    <!-- List recommendation view -->
+    <string name="list_recommendation">List recommendation</string>
+    <string name="from_recommendation">From</string>
+
+    <!-- Update profile view -->
+    <string name="update_profile_message">Profile updated successfully!</string>
+    <string name="my_profile">My profile</string>
+    <string name="view_my_profile">View my profile</string>
+    <string name="edit_bio_my_profile">Edit bio</string>
+    <string name="edit_username_my_profile">Edit username</string>
+    <string name="edit_platform_my_profile">Platforms that you have</string>
+    <string name="done">Done</string>
+
+    <!-- List user dialog -->
+    <string name="list_follower">Follower of&#160;</string>
+    <string name="list_following">Following of&#160;</string>
+
+    <!-- Filter entertainment dialog -->
+    <string name="filter">Filter</string>
+    <string name="filter_tv_show">TV Show</string>
+    <string name="filter_book">Book</string>
+    <string name="filter_category_action">Action</string>
+    <string name="filter_category_adventure">Adventure</string>
+    <string name="filter_category_family">Family</string>
+    <string name="filter_category_comedy">Comedy</string>
+    <string name="filter_category_documentaries">Documentaries</string>
+
+    <!-- Profile view -->
+    <string name="list_entertainemnt_consumed">List entertainment consumed</string>
+
+    <!-- Add list consumed -->
+    <string name="added_to_list_consumed">Entertainment added to your list of consumed</string>
+    <string name="duplicate_entertainment_in_list_consumed">Entertainment already present in the list</string>
+
+    <!-- Information Entertainment view -->
+    <string name="information_entertainment_title">Information about entertainment</string>
+
+    <!-- Exlore entertainment fragment view -->
+    <string name="search_entertainment">Search entertainment</string>
+
+
+</resources>
