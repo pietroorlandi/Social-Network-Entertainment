@@ -56,6 +56,8 @@ public class HomeFragment extends Fragment{
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
         recommenderSystem = new RecommenderSystem(user.getUid(), this);
         recommenderSystem.recommend();
+
+        /* Quando faccio swipe verso il basso si aggiornerà la lista dei consigliati */
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
