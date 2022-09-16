@@ -164,6 +164,7 @@ public class EntertainmentDbHandler {
      * @return
      */
     public static FirestoreRecyclerOptions<Entertainment> loadEntertainmentByIds(List<Long> listId) {
+        Log.d(TAG, "Lista id: "+listId);
         Query query = FirebaseFirestore.getInstance()
                 .collection("Entertainment")
                 .whereIn("id", listId)

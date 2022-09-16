@@ -1,4 +1,4 @@
-package com.pietroorlandi.socialnetwork_entertainment.gui
+package com.pietroorlandi.socialnetwork_entertainment.logic
 
 import android.app.Activity
 import android.util.Log
@@ -7,6 +7,7 @@ import com.google.android.gms.tasks.Tasks
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.QuerySnapshot
+import com.pietroorlandi.socialnetwork_entertainment.gui.HomeFragment
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import java.util.*

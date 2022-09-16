@@ -18,6 +18,8 @@ import com.pietroorlandi.socialnetwork_entertainment.logic.EntertainmentDbHandle
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.pietroorlandi.socialnetwork_entertainment.logic.RecommenderSystem;
+
 import java.util.List;
 
 /**
