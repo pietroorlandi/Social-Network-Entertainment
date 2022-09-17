@@ -52,7 +52,7 @@ class RecommenderSystem() {
             val db = FirebaseFirestore.getInstance()
             val refEntertainment = db.collection("Entertainment")
             val refProfile = db.collection("Profile")
-            val taskEntertainmentConsumedLoggedUser: Task<QuerySnapshot> = refProfile.document(uid!!).collection("listEntertainmentConsumed").get()
+            val taskEntertainmentConsumedByLoggedUser: Task<QuerySnapshot> = refProfile.document(uid!!).collection("listEntertainmentConsumed").get()
             val listEntertainmentConsumedByLoggedUser: MutableList<Long> = ArrayList()
 
             /* Genero la lista degli intrattenimenti consumati dall'utente loggato */
@@ -60,8 +60,8 @@ class RecommenderSystem() {
                 /* Il comando Tasks.await permette di comportarsi in maniera sincrona.
                  * È stato utilizzato in questa maniera perché questa volta, l'elaborazione dei risultati è più complessa e Firestore Database non riesce a trattare query complesse
                  */
-                val querySnap = Tasks.await(taskEntertainmentConsumedLoggedUser) as QuerySnapshot
-                for (docEntertainment in querySnap.documents) {
+                val snapEntertainmentConsumedByLoggedUser = Tasks.await(taskEntertainmentConsumedByLoggedUser) as QuerySnapshot
+                for (docEntertainment in snapEntertainmentConsumedByLoggedUser.documents) {
                     listEntertainmentConsumedByLoggedUser.add(docEntertainment.id.toLong())
                 }
             } catch (e: ExecutionException ) {
@@ -82,8 +82,8 @@ class RecommenderSystem() {
                     val taskEntertainmentConsumedByUser =
                         refProfile.document(uidFollowing).collection("listEntertainmentConsumed")
                             .get()
-                    val querySnap = Tasks.await(taskEntertainmentConsumedByUser) as QuerySnapshot
-                    for (docEntertainment in querySnap.documents) {
+                    val snapEntertainmentConsumedByFollowing = Tasks.await(taskEntertainmentConsumedByUser) as QuerySnapshot
+                    for (docEntertainment in snapEntertainmentConsumedByFollowing.documents) {
                         listRecommendedForUser.add(docEntertainment.id.toLong())
                     }
                 }
@@ -120,8 +120,8 @@ class RecommenderSystem() {
                             .limit(NUM_ENTERTAINMENT_RECOMMENDED_FOR_CATEGORY.toLong())
                             .get()
                     val snapEntertainmentWithCommonCategory = Tasks.await<QuerySnapshot>(taskEntertainmentWithCategoriesInCommon) as QuerySnapshot
-                    for (docUser in snapEntertainmentWithCommonCategory.documents) {
-                        listRecommendedForUser.add(docUser.getLong("id"))
+                    for (docEntertainment in snapEntertainmentWithCommonCategory.documents) {
+                        listRecommendedForUser.add(docEntertainment.getLong("id"))
                     }
                 } catch (e: ExecutionException) {
                     e.printStackTrace()
@@ -137,8 +137,8 @@ class RecommenderSystem() {
             val taskEntertainmentMostReviewd: Task<QuerySnapshot> = refEntertainment.orderBy("sumReview", Query.Direction.DESCENDING).limit(numberEntertainmentHighReviewToReccomend).get()
             try {
                 val snapEntertainmentMostReviewed = Tasks.await(taskEntertainmentMostReviewd) as QuerySnapshot
-                for (docUser in snapEntertainmentMostReviewed.documents) {
-                    listRecommendedForUser.add(docUser.getLong("id"))
+                for (docEntertainment in snapEntertainmentMostReviewed.documents) {
+                    listRecommendedForUser.add(docEntertainment.getLong("id"))
                 }
             } catch (e: ExecutionException) {
                 e.printStackTrace()
